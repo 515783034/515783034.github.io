@@ -96,16 +96,21 @@
 
 
 
-  <meta name="description" content="A iOS developer&apos;s blog">
-<meta property="og:type" content="website">
-<meta property="og:title" content="ashen23">
-<meta property="og:url" content="http://yoursite.com/tags/macos/index.html">
+  <meta name="description" content="“我们从小就听长辈们说起过懒汉，仿佛懒惰很不体面。实际上，没有我们的这些懒汉，恐怕就没有社会的进步；没有我们的这些懒汉，勤劳的人面对的恐怕只会是单调乏味的劳作。”这里引入小学课本学过的文章《懒惰的智慧》中的一句话，深以为这句话就是对我们程序员群体的真实写照，促进社会进步说的有点夸张，但是提高生产效率还是不在话下的，这也是我本次纪录的一点儿动力。 好好的开发 iOS，为什么要玩玩 macOS 呢？">
+<meta name="keywords" content="macos,Swift">
+<meta property="og:type" content="article">
+<meta property="og:title" content="一次 Cocoa App(macOS App)开发尝试">
+<meta property="og:url" content="http://yoursite.com/2019/03/01/try-macos-app/index.html">
 <meta property="og:site_name" content="ashen23">
-<meta property="og:description" content="A iOS developer&apos;s blog">
+<meta property="og:description" content="“我们从小就听长辈们说起过懒汉，仿佛懒惰很不体面。实际上，没有我们的这些懒汉，恐怕就没有社会的进步；没有我们的这些懒汉，勤劳的人面对的恐怕只会是单调乏味的劳作。”这里引入小学课本学过的文章《懒惰的智慧》中的一句话，深以为这句话就是对我们程序员群体的真实写照，促进社会进步说的有点夸张，但是提高生产效率还是不在话下的，这也是我本次纪录的一点儿动力。 好好的开发 iOS，为什么要玩玩 macOS 呢？">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://i.loli.net/2019/03/01/5c789338173aa.png">
+<meta property="og:image" content="https://i.loli.net/2019/03/01/5c7898fdf32fd.png">
+<meta property="og:updated_time" content="2019-05-30T07:41:35.653Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ashen23">
-<meta name="twitter:description" content="A iOS developer&apos;s blog">
+<meta name="twitter:title" content="一次 Cocoa App(macOS App)开发尝试">
+<meta name="twitter:description" content="“我们从小就听长辈们说起过懒汉，仿佛懒惰很不体面。实际上，没有我们的这些懒汉，恐怕就没有社会的进步；没有我们的这些懒汉，勤劳的人面对的恐怕只会是单调乏味的劳作。”这里引入小学课本学过的文章《懒惰的智慧》中的一句话，深以为这句话就是对我们程序员群体的真实写照，促进社会进步说的有点夸张，但是提高生产效率还是不在话下的，这也是我本次纪录的一点儿动力。 好好的开发 iOS，为什么要玩玩 macOS 呢？">
+<meta name="twitter:image" content="https://i.loli.net/2019/03/01/5c789338173aa.png">
 
 
 
@@ -113,7 +118,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/tags/macos/">
+  <link rel="canonical" href="http://yoursite.com/2019/03/01/try-macos-app/">
 
 
 
@@ -123,7 +128,7 @@
   };
 </script>
 
-  <title>标签: macos | ashen23</title>
+  <title>一次 Cocoa App(macOS App)开发尝试 | ashen23</title>
   
 
 
@@ -171,7 +176,7 @@
     
   
 
-  <div class="container sidebar-position-right ">
+  <div class="container sidebar-position-right page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -247,7 +252,7 @@
         
         
           
-          <li class="menu-item menu-item-tags menu-item-active">
+          <li class="menu-item menu-item-tags">
 
     
     
@@ -311,28 +316,6 @@
   
     
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
   
 
   
@@ -385,83 +368,337 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>macos<small>标签</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
+
+  
+    <div class="reading-progress-bar"></div>
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/01/try-macos-app/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ashen23">
+      <meta itemprop="description" content="A iOS developer's blog">
+      <meta itemprop="image" content="/images/avatar.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ashen23">
+    </span>
+
+    
+      <header class="post-header">
+
         
-          <a class="post-title-link" href="/2019/03/01/try-macos-app/" itemprop="url">
-            
-              <span itemprop="name">一次 Cocoa App(macOS App)开发尝试</span>
-            
-          </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">一次 Cocoa App(macOS App)开发尝试
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-03-01T10:10:10+08:00" content="2019-03-01">
-          03-01
-        </time>
-      </div>
+              
+            
+          </h1>
+        
 
-    </header>
-  </article>
+        <div class="post-meta">
+          <span class="post-time">
 
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-03-01 10:10:10" itemprop="dateCreated datePublished" datetime="2019-03-01T10:10:10+08:00">2019-03-01</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-05-30 15:41:35" itemprop="dateModified" datetime="2019-05-30T15:41:35+08:00">2019-05-30</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/macos/" itemprop="url" rel="index"><span itemprop="name">macos</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">评论数：</span>
+                <a href="/2019/03/01/try-macos-app/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2019/03/01/try-macos-app/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-        
+      
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2017/11/09/我用Xcode +python写的第一个OS X app/" itemprop="url">
-            
-              <span itemprop="name">我用Xcode +python写的第一个OS X app</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2017-11-09T10:10:10+08:00" content="2017-11-09">
-          11-09
-        </time>
-      </div>
-
-    </header>
-  </article>
-
+      
+        <p><img src="https://i.loli.net/2019/03/01/5c789338173aa.png" alt></p>
+<p>“我们从小就听长辈们说起过懒汉，仿佛懒惰很不体面。实际上，没有我们的这些懒汉，恐怕就没有社会的进步；没有我们的这些懒汉，勤劳的人面对的恐怕只会是单调乏味的劳作。”这里引入小学课本学过的文章《懒惰的智慧》中的一句话，深以为这句话就是对我们程序员群体的真实写照，促进社会进步说的有点夸张，但是提高生产效率还是不在话下的，这也是我本次纪录的一点儿动力。</p>
+<p>好好的开发 iOS，为什么要玩玩 macOS 呢？自我揣测每一位 iOSer 的内心中都有一个开发 macOS 的冲动，毕竟工具(mac + Xcode)和基础技术(Objective-C, Swift)都是现成的，iOS 开发的应用需要上架才能使用，而 mac App 甚至都可以省略上架这一步，在朋友间传播起来也方便得多。</p>
+<p>闲话少说，今天谈谈最近一次开发的 macOS App <a href="https://itunes.apple.com/cn/app//id1445645840?mt=12" target="_blank" rel="noopener">开发者之刃 App Store</a>、<a href="https://www.juanji.xyz/" target="_blank" rel="noopener">开发者之刃 首页</a>。</p>
+<a id="more"></a>
+<p><img src="https://i.loli.net/2019/03/01/5c7898fdf32fd.png" alt="App Store 页介绍"></p>
+<p>功能包括：</p>
+<ul>
+<li>色盘(存储配色方案)</li>
+<li>图标生成器（生成 iOS/macOS/Android 多尺寸图标文件）</li>
+<li>图像压缩（基于 <a href="https://tinypng.com/" target="_blank" rel="noopener">TinyPng</a>）</li>
+<li>json 转模型(json 字符串转成 swift 模型对象)</li>
+<li>开源库集（github 开源库分类整理）等功能</li>
+<li>支持开机自启动、全局快捷键、自动检查更新等。</li>
+</ul>
+<h3 id="1-从技术的角度谈谈做了什么"><a href="#1-从技术的角度谈谈做了什么" class="headerlink" title="1. 从技术的角度谈谈做了什么"></a>1. 从技术的角度谈谈做了什么</h3><h4 id="1-1-开发了一款-macOS-App"><a href="#1-1-开发了一款-macOS-App" class="headerlink" title="1.1 开发了一款 macOS App"></a>1.1 开发了一款 macOS App</h4><p>主要采用 Swift4.2 编写“开发者之刃”，相比于 OC，Swift 的优势想必用过的朋友们都知道。</p>
+<p>“开发者之刃”的技术点大概如下：</p>
+<ul>
+<li><code>CocoaPods</code>管理第三方开源库<ul>
+<li><a href="https://github.com/Alamofire/Alamofire" target="_blank" rel="noopener">Alamofire</a> 网络框架</li>
+<li><a href="https://github.com/CocoaLumberjack/CocoaLumberjack" target="_blank" rel="noopener">CocoaLumberjack/Swift</a> 日志纪录</li>
+<li><a href="https://github.com/SnapKit/SnapKit" target="_blank" rel="noopener">SnapKit</a> 自动布局</li>
+<li><a href="https://github.com/onevcat/Kingfisher" target="_blank" rel="noopener">Kingfisher</a> 网络图片加载缓存</li>
+<li><a href="https://fabric.io/kits" target="_blank" rel="noopener">Fabric</a> bug 及用户行为分析</li>
+<li><a href="https://github.com/sindresorhus/LaunchAtLogin" target="_blank" rel="noopener">LaunchAtLogin</a> 开机自启动</li>
+</ul>
+</li>
+<li>全局快捷键：主要用到 <code>RegisterEventHotKey</code>方法</li>
+<li>Python 和 Swift 交互：可以看下之前写的文章<a href="https://xiaozhuanlan.com/topic/7365091284" target="_blank" rel="noopener">《我用 Xcode+python 写的第一个 OSX app》</a>，关键词：<code>Process</code></li>
+<li>本地缓存：未使用数据库，采用 json 格式存本地文件，使用的库：<a href="https://github.com/tristanhimmelman/ObjectMapper" target="_blank" rel="noopener">ObjectMapper</a></li>
+</ul>
+<p>对于没有开发mac 经验的同学，推荐剑指人心的 <a href="https://macdev.io/" target="_blank" rel="noopener">《macOS 应用开发基础教程》</a>，入门是完完全全没有问题的。“开发者之刃”里面用到的技术基本上都能在这本书中找到，而且从完全没有 mac App 开发经验到上架一个完整的 App，本人是照着书中内容一步步走下来的，这里也一并感谢下作者。</p>
+<h4 id="1-2-顺手撸了个服务端"><a href="#1-2-顺手撸了个服务端" class="headerlink" title="1.2 顺手撸了个服务端"></a>1.2 顺手撸了个服务端</h4><p>采用 Python 的 Flask 库搭建的服务端，操作简单，功能全面。IDE 用的是 <a href="https://www.jetbrains.com/pycharm/" target="_blank" rel="noopener">PyCharm</a>。</p>
+<p>这里为什么要用“顺手”二字呢？实实在在是没有服务端的开发经验，在网易云课堂上看了一个教程，操起键盘就是干。中间遇到问题就 Google 一下，不能解决的就直接绕过去了，所以到最后功能既不完善，也不系统，但也勉强够用。毕竟精力有限，以完善功能为主，系统性的学习还任重而道远。</p>
+<p>服务端的技术点大概如下：</p>
+<ul>
+<li>pip: 包管理工具<ul>
+<li><a href="http://flask.pocoo.org/" target="_blank" rel="noopener">Flask</a>: Web 开发微框架</li>
+<li><a href="https://github.com/zzzeek/sqlalchemy" target="_blank" rel="noopener">SQLAlchemy</a>: 数据库工具</li>
+<li><a href="https://github.com/miguelgrinberg/Flask-Migrate" target="_blank" rel="noopener">Flask-Migrate</a>: 数据库升级工具</li>
+</ul>
+</li>
+<li>http 请求、web 页面：Flask 很容易实现</li>
+<li><a href="https://cn.vuejs.org/" target="_blank" rel="noopener">Vue</a>: 渐进式 JavaScript 框架，快速构建 web 页面</li>
+</ul>
+<p>半吊子都算不上的服务端开发，这里就不班门弄斧了，基本功能大概如上所诉。照着网易云上的视频 <a href="https://study.163.com/course/courseMain.htm?courseId=1004091002" target="_blank" rel="noopener">Python Flask系列（1）——基础</a> 学习的 Flask 基础，感觉讲的挺好，浅显易懂，写个简简单单的页面是完全足够了。</p>
+<h4 id="1-3-切了几张图"><a href="#1-3-切了几张图" class="headerlink" title="1.3 切了几张图"></a>1.3 切了几张图</h4><p>图可以切，审美就不不必较真了。</p>
+<p>技术呢也没有用到什么技术(主要是我都不知道有啥技术，完全两眼一抹黑)，这里就简单介绍下用的工具吧。</p>
+<ul>
+<li><a href="https://www.sketchapp.com/" target="_blank" rel="noopener">Sketch</a>：轻量易用的矢量设计工具。易用易用，谁用谁知道。</li>
+<li><a href="https://www.iconfont.cn/" target="_blank" rel="noopener">iconfont</a>:矢量图标管理、交流平台。免费图标多种多样，可下载源文件，也可指定颜色、大小下载。</li>
+<li><a href="https://tinypng.com/" target="_blank" rel="noopener">tinypng</a>: 智能有损压缩图片。“开发者之刃”中的图片压缩功能核心就是用的它的服务，压缩率高，压缩后的图像几乎肉眼看不到失真。</li>
+</ul>
+<h3 id="2-谈谈为什么要做这个-App"><a href="#2-谈谈为什么要做这个-App" class="headerlink" title="2. 谈谈为什么要做这个 App"></a>2. 谈谈为什么要做这个 App</h3><p>前面提到了，每个 iOSer 的内心中都有一颗开发 mac App 的心，其实说白了，每一个程序员的内心中都有尝试新事物的冲动。</p>
+<p>确确实实解决开发中的一些痛点。服务端甩给客户端一大串 json，我们每次构建对象时烦不胜烦，机械重复的代码只是在浪费我们有限的生命与激情，所以有了《json 转模型》的想法。设计给的色值一天三变，背景色、基础字体颜色不统一，被他们一句“这个颜色就是之前用的”弄得痛不欲生，自己设计个玩意后，色值转身就忘，所以有了《色盘》的想法。github 看到优秀的仓库也不太想 star，实在是 star 的数量过多，想用的时候像是大海捞针，所以有了《开源库集》的想法。自己写个 App，要被切各个尺寸的图弄疯，切完还得一张张拖到 Assets 中合适的坑中，总之开发中总会遇到一些重复的工作，大概是可以通过代码处理的吧。</p>
+<p>学习真的会使人快乐。当刚开始接触一个新的技术时，汲取知识的快感是强烈的，不论是纯粹的学习还是单纯想炫技，能学到东西总归是一个非常好的结果。当然要深挖技术时的确会有痛苦，痛并快乐着吧。</p>
+<h3 id="3-作一个简单的总结"><a href="#3-作一个简单的总结" class="headerlink" title="3. 作一个简单的总结"></a>3. 作一个简单的总结</h3><p>技术：</p>
+<ul>
+<li>mac App 开发：Swift + Xcode</li>
+<li>web 开发：Python + PyCharm</li>
+<li>切图：iconfont + Sketch</li>
+</ul>
+<p>资源：</p>
+<ul>
+<li><a href="https://www.juanji.xyz/" target="_blank" rel="noopener">开发者之刃 首页</a></li>
+<li><a href="https://macdev.io/" target="_blank" rel="noopener">《macOS 应用开发基础教程》</a></li>
+<li><a href="https://study.163.com/course/courseMain.htm?courseId=1004091002" target="_blank" rel="noopener">Python Flask系列（1）——基础</a></li>
+<li><a href="https://www.iconfont.cn/" target="_blank" rel="noopener">iconfont</a></li>
+<li><a href="https://tinypng.com/" target="_blank" rel="noopener">tinypng</a></li>
+</ul>
 
       
     </div>
 
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+      <div>
+        <div id="reward-container">
+  <div>您的支持将鼓励我继续创作！</div>
+  <button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/wechat_pay.JPG" alt="ashen23 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/ali_pay.JPG" alt="ashen23 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/macos/" rel="tag"># macos</a>
+          
+            <a href="/tags/Swift/" rel="tag"># Swift</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/03/20/自建 iOS 静态库并用 pod 管理/" rel="next" title="自建 iOS 静态库并用 pod 管理">
+                <i class="fa fa-chevron-left"></i> 自建 iOS 静态库并用 pod 管理
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+  </div>
 
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
+
+  
+
+
 
         </div>
         
@@ -481,8 +718,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -615,6 +861,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-从技术的角度谈谈做了什么"><span class="nav-number">1.</span> <span class="nav-text">1. 从技术的角度谈谈做了什么</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-1-开发了一款-macOS-App"><span class="nav-number">1.1.</span> <span class="nav-text">1.1 开发了一款 macOS App</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-2-顺手撸了个服务端"><span class="nav-number">1.2.</span> <span class="nav-text">1.2 顺手撸了个服务端</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-3-切了几张图"><span class="nav-number">1.3.</span> <span class="nav-text">1.3 切了几张图</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-谈谈为什么要做这个-App"><span class="nav-number">2.</span> <span class="nav-text">2. 谈谈为什么要做这个 App</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-作一个简单的总结"><span class="nav-number">3.</span> <span class="nav-text">3. 作一个简单的总结</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
@@ -771,6 +1034,10 @@
 
 
   
+  <script src="/js/scrollspy.js?v=7.1.1"></script>
+<script src="/js/post-details.js?v=7.1.1"></script>
+
+
 
   
 
@@ -786,6 +1053,42 @@
 
   
 
+
+  
+    <!-- LOCAL: You can save these files to your site and update links -->
+
+  
+  <script src="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/gitmint.browser.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/default.css">
+<!-- END LOCAL -->
+
+<script>
+  function renderGitment() {
+    var gitment = new Gitmint({
+      id: '1551406210000',
+      owner: '515783034',
+      repo: '515783034.github.io',
+      
+        lang: '' || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+      
+      oauth: {
+      
+      
+        client_secret: '54c2ba43d86ef0be22840dfa75e391beed94e1bf',
+      
+        client_id: '9a93805d383fae402795'
+      }
+    });
+    gitment.render('gitment-container');
+  }
+
+  
+    renderGitment();
+  
+</script>
+
+  
 
 
   
@@ -1139,7 +1442,7 @@
   <script src="/lib/bookmark/bookmark.min.js?v=1.0"></script>
   <script>
   
-    bookmark.loadBookmark();
+    bookmark.scrollToMark('auto', "#更多");
   
   </script>
 
