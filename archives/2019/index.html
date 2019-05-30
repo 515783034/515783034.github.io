@@ -11,10 +11,8 @@
 
 
 
-  
 
-
-<html class="theme-next mist use-motion" lang="zh-CN">
+<html class="theme-next mist" lang="zh-CN">
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -37,6 +35,10 @@
 
 
 
+
+  
+  
+  <link rel="stylesheet" href="/lib/fancybox/source/jquery.fancybox.css">
 
 
 
@@ -72,14 +74,14 @@
     root: '/',
     scheme: 'Mist',
     version: '7.1.1',
-    sidebar: {"position":"right","display":"always","offset":12,"onmobile":false,"dimmer":true},
+    sidebar: {"position":"right","display":"post","offset":12,"onmobile":false,"dimmer":false},
     back2top: true,
     back2top_sidebar: false,
-    fancybox: false,
+    fancybox: true,
     fastclick: false,
     lazyload: false,
     tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     algolia: {
       applicationID: '',
       apiKey: '',
@@ -97,14 +99,15 @@
 
 
   <meta name="description" content="A iOS developer&apos;s blog">
+<meta name="keywords" content="iOS,macos,python">
 <meta property="og:type" content="website">
-<meta property="og:title" content="ashen23">
+<meta property="og:title" content="ashen23 Codeble">
 <meta property="og:url" content="http://yoursite.com/archives/2019/index.html">
-<meta property="og:site_name" content="ashen23">
+<meta property="og:site_name" content="ashen23 Codeble">
 <meta property="og:description" content="A iOS developer&apos;s blog">
 <meta property="og:locale" content="zh-CN">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ashen23">
+<meta name="twitter:title" content="ashen23 Codeble">
 <meta name="twitter:description" content="A iOS developer&apos;s blog">
 
 
@@ -123,7 +126,7 @@
   };
 </script>
 
-  <title>归档 | ashen23</title>
+  <title>归档 | ashen23 Codeble</title>
   
 
 
@@ -182,7 +185,7 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">ashen23</span>
+        <span class="site-title">ashen23 Codeble</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -240,7 +243,7 @@
 
     
 
-    <a href="/about/index.html" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
 
   </li>
         
@@ -617,8 +620,6 @@
     </div>
   </aside>
   
-    <div id="sidebar-dimmer"></div>
-  
 
 
         
@@ -689,6 +690,8 @@
       <div class="back-to-top">
         <i class="fa fa-arrow-up"></i>
         
+          <span id="scrollpercent"><span>0</span>%</span>
+        
       </div>
     
 
@@ -718,6 +721,8 @@
 
 
 
+  
+
 
 
 
@@ -742,6 +747,9 @@
 
   
   <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/fancybox/source/jquery.fancybox.pack.js"></script>
 
   
   <script src="/lib/reading_progress/reading_progress.js"></script>

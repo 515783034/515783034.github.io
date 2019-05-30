@@ -11,10 +11,8 @@
 
 
 
-  
 
-
-<html class="theme-next mist use-motion" lang="zh-CN">
+<html class="theme-next mist" lang="zh-CN">
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -37,6 +35,10 @@
 
 
 
+
+  
+  
+  <link rel="stylesheet" href="/lib/fancybox/source/jquery.fancybox.css">
 
 
 
@@ -72,14 +74,14 @@
     root: '/',
     scheme: 'Mist',
     version: '7.1.1',
-    sidebar: {"position":"right","display":"always","offset":12,"onmobile":false,"dimmer":true},
+    sidebar: {"position":"right","display":"post","offset":12,"onmobile":false,"dimmer":false},
     back2top: true,
     back2top_sidebar: false,
-    fancybox: false,
+    fancybox: true,
     fastclick: false,
     lazyload: false,
     tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     algolia: {
       applicationID: '',
       apiKey: '',
@@ -96,23 +98,22 @@
 
 
 
-  <meta name="description" content="前两天刚订阅了bestswifter大大的小专栏，其中《2018 年将至，ios 工程师如何自我提高》这篇文章使我感触颇深，最近刚好开始看python, 就萌生了写一个python脚本练练手的想法。  1. 为什么要写这个app？  原因之一当然是学了点东西总想练练手。  更为重要的原因则是，在写iOS app时，每增加一个网络请求，就要写一个json对应的model类，而构造这些model类">
-<meta name="keywords" content="macos,Python">
+  <meta name="description" content="抓包工具配置1. Fiddler(windows) 安装：https://www.telerik.com/download/fiddler 配置：    12345678910111213# 1. 允许远程连接Tools &amp;gt; Fiddler Options &amp;gt; Connections &amp;gt; Allow remote computers to connect# 2. 支持 HTTP">
+<meta name="keywords" content="Python,scrapy,抓包">
 <meta property="og:type" content="article">
-<meta property="og:title" content="我用Xcode +python写的第一个OS X app">
-<meta property="og:url" content="http://yoursite.com/2017/11/09/我用Xcode +python写的第一个OS X app/index.html">
-<meta property="og:site_name" content="ashen23">
-<meta property="og:description" content="前两天刚订阅了bestswifter大大的小专栏，其中《2018 年将至，ios 工程师如何自我提高》这篇文章使我感触颇深，最近刚好开始看python, 就萌生了写一个python脚本练练手的想法。  1. 为什么要写这个app？  原因之一当然是学了点东西总想练练手。  更为重要的原因则是，在写iOS app时，每增加一个网络请求，就要写一个json对应的model类，而构造这些model类">
+<meta property="og:title" content="用 scrapy 爬微信公众号的内容">
+<meta property="og:url" content="http://yoursite.com/2018/02/06/wechat-official-with-scrapy/index.html">
+<meta property="og:site_name" content="ashen23 Codeble">
+<meta property="og:description" content="抓包工具配置1. Fiddler(windows) 安装：https://www.telerik.com/download/fiddler 配置：    12345678910111213# 1. 允许远程连接Tools &amp;gt; Fiddler Options &amp;gt; Connections &amp;gt; Allow remote computers to connect# 2. 支持 HTTP">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://user-gold-cdn.xitu.io/2017/11/8/e1b5b80d8663bb50abf5ba6be27278f9?w=1240&h=698&f=jpeg&s=90584">
-<meta property="og:image" content="https://user-gold-cdn.xitu.io/2017/11/8/200e8982e2fdd2e1c33df6ef9c818595?w=1031&h=505&f=gif&s=379843">
-<meta property="og:image" content="https://user-gold-cdn.xitu.io/2017/11/8/b188c6190dd0acf63cf50f5a3c20a7dc?w=1033&h=528&f=png&s=15593">
-<meta property="og:image" content="https://user-gold-cdn.xitu.io/2017/11/8/95cbe825eb9a297aed97bc2b5f1a4402?w=895&h=283&f=png&s=67311">
-<meta property="og:updated_time" content="2019-05-30T07:45:39.157Z">
+<meta property="og:image" content="https://diycode.b0.upaiyun.com/photo/2018/d5c2fae2609a20f63ce8874272126d01.png">
+<meta property="og:image" content="https://diycode.b0.upaiyun.com/photo/2018/2f41e5d1a0a4ad2851619b136b6db5f5.png">
+<meta property="og:image" content="https://diycode.b0.upaiyun.com/photo/2018/784da6b14584170d45393a0476105e63.png">
+<meta property="og:updated_time" content="2019-05-30T07:41:17.171Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="我用Xcode +python写的第一个OS X app">
-<meta name="twitter:description" content="前两天刚订阅了bestswifter大大的小专栏，其中《2018 年将至，ios 工程师如何自我提高》这篇文章使我感触颇深，最近刚好开始看python, 就萌生了写一个python脚本练练手的想法。  1. 为什么要写这个app？  原因之一当然是学了点东西总想练练手。  更为重要的原因则是，在写iOS app时，每增加一个网络请求，就要写一个json对应的model类，而构造这些model类">
-<meta name="twitter:image" content="https://user-gold-cdn.xitu.io/2017/11/8/e1b5b80d8663bb50abf5ba6be27278f9?w=1240&h=698&f=jpeg&s=90584">
+<meta name="twitter:title" content="用 scrapy 爬微信公众号的内容">
+<meta name="twitter:description" content="抓包工具配置1. Fiddler(windows) 安装：https://www.telerik.com/download/fiddler 配置：    12345678910111213# 1. 允许远程连接Tools &amp;gt; Fiddler Options &amp;gt; Connections &amp;gt; Allow remote computers to connect# 2. 支持 HTTP">
+<meta name="twitter:image" content="https://diycode.b0.upaiyun.com/photo/2018/d5c2fae2609a20f63ce8874272126d01.png">
 
 
 
@@ -120,7 +121,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/2017/11/09/我用Xcode +python写的第一个OS X app/">
+  <link rel="canonical" href="http://yoursite.com/2018/02/06/wechat-official-with-scrapy/">
 
 
 
@@ -130,7 +131,7 @@
   };
 </script>
 
-  <title>我用Xcode +python写的第一个OS X app | ashen23</title>
+  <title>用 scrapy 爬微信公众号的内容 | ashen23 Codeble</title>
   
 
 
@@ -189,7 +190,7 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">ashen23</span>
+        <span class="site-title">ashen23 Codeble</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -247,7 +248,7 @@
 
     
 
-    <a href="/about/index.html" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
 
   </li>
         
@@ -388,7 +389,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/09/我用Xcode +python写的第一个OS X app/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/06/wechat-official-with-scrapy/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ashen23">
@@ -397,7 +398,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ashen23">
+      <meta itemprop="name" content="ashen23 Codeble">
     </span>
 
     
@@ -405,7 +406,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">我用Xcode +python写的第一个OS X app
+          <h1 class="post-title" itemprop="name headline">用 scrapy 爬微信公众号的内容
 
               
             
@@ -413,6 +414,7 @@
         
 
         <div class="post-meta">
+          
           <span class="post-time">
 
             
@@ -420,26 +422,11 @@
             
 
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2017-11-09 10:10:10" itemprop="dateCreated datePublished" datetime="2017-11-09T10:10:10+08:00">2017-11-09</time>
-            
 
             
               
 
               
-                
-                <span class="post-meta-divider">|</span>
                 
 
                 <span class="post-meta-item-icon">
@@ -448,7 +435,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-05-30 15:45:39" itemprop="dateModified" datetime="2019-05-30T15:45:39+08:00">2019-05-30</time>
+                <time title="修改时间：2019-05-30 15:41:17" itemprop="dateModified" datetime="2019-05-30T15:41:17+08:00">2019-05-30</time>
               
             
           </span>
@@ -465,7 +452,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/macos/" itemprop="url" rel="index"><span itemprop="name">macos</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Python/" itemprop="url" rel="index"><span itemprop="name">Python</span></a></span>
 
                 
                 
@@ -475,19 +462,6 @@
 
           
             
-            
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">评论数：</span>
-                <a href="/2017/11/09/我用Xcode +python写的第一个OS X app/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count gitment-comments-count" data-xid="/2017/11/09/我用Xcode +python写的第一个OS X app/" itemprop="commentCount"></span>
-                </a>
-              </span>
             
           
 
@@ -520,54 +494,48 @@
       
 
       
-        <p><img src="https://user-gold-cdn.xitu.io/2017/11/8/e1b5b80d8663bb50abf5ba6be27278f9?w=1240&h=698&f=jpeg&s=90584" alt></p>
-<blockquote>
-<p>前两天刚订阅了<a href="http://www.jianshu.com/u/3e55748920d2" target="_blank" rel="noopener">bestswifter</a>大大的小专栏，其中《2018 年将至，ios 工程师如何自我提高》这篇文章使我感触颇深，最近刚好开始看python, 就萌生了写一个python脚本练练手的想法。</p>
-</blockquote>
-<h2 id="1-为什么要写这个app？"><a href="#1-为什么要写这个app？" class="headerlink" title="1. 为什么要写这个app？"></a>1. 为什么要写这个app？</h2><p>  原因之一当然是学了点东西总想练练手。<br>  更为重要的原因则是，在写iOS app时，每增加一个网络请求，就要写一个json对应的model类，而构造这些model类的代码毫无快感可言。so，人生苦短，我用python</p>
+        <p><img src="https://diycode.b0.upaiyun.com/photo/2018/d5c2fae2609a20f63ce8874272126d01.png" alt></p>
+<h2 id="抓包工具配置"><a href="#抓包工具配置" class="headerlink" title="抓包工具配置"></a>抓包工具配置</h2><h3 id="1-Fiddler-windows"><a href="#1-Fiddler-windows" class="headerlink" title="1. Fiddler(windows)"></a>1. Fiddler(windows)</h3><ul>
+<li>安装：<a href="https://www.telerik.com/download/fiddler" target="_blank" rel="noopener">https://www.telerik.com/download/fiddler</a></li>
+<li>配置：  </li>
+</ul>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 1. 允许远程连接</span></span><br><span class="line">Tools &gt; Fiddler Options &gt; Connections &gt; Allow remote computers to connect</span><br><span class="line"><span class="comment"># 2. 支持 HTTPS</span></span><br><span class="line">Tools &gt; Fiddler Options &gt; HTTPS &gt; Decrypt HTTPS traffic</span><br><span class="line"><span class="comment"># 3. 重启</span></span><br><span class="line">restart Fiddler</span><br><span class="line"></span><br><span class="line"><span class="comment"># 4. 手机配置</span></span><br><span class="line">手机 wifi 设置代理，服务器地址为为电脑 ip 地址 xxx.xxx.xxx.xxx，端口为 <span class="number">8888</span></span><br><span class="line"><span class="comment"># 5. 下载根证书</span></span><br><span class="line">safari 打开 xxx.xxx.xxx.<span class="symbol">xxx:</span><span class="number">8888</span>， 下载安装根证书</span><br><span class="line"><span class="comment"># 6. 完全信任证书</span></span><br><span class="line">设置 &gt; 通用 &gt; 关于本机 &gt; 证书信任设置 &gt; 针对根证书启用完全信任</span><br></pre></td></tr></table></figure>
+
 <a id="more"></a>
-<p><img src="https://user-gold-cdn.xitu.io/2017/11/8/200e8982e2fdd2e1c33df6ef9c818595?w=1031&h=505&f=gif&s=379843" alt></p>
-<hr>
-<h2 id="2-技术栈"><a href="#2-技术栈" class="headerlink" title="2. 技术栈"></a>2. 技术栈</h2><h3 id="python最最最基础知识"><a href="#python最最最基础知识" class="headerlink" title="python最最最基础知识"></a>python最最最基础知识</h3><h4 id="1-json反序列化"><a href="#1-json反序列化" class="headerlink" title="1. json反序列化"></a>1. json反序列化</h4><p>将输入的json字符串转成对应的字典(dict) + 数组(list)组合的形式<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">res = json.loads(&quot;输入的json字符串&quot;)</span><br></pre></td></tr></table></figure></p>
-<h4 id="2-字符串操作"><a href="#2-字符串操作" class="headerlink" title="2. 字符串操作"></a>2. 字符串操作</h4><p>  解析字典和数组内容，生成swift对应的字符串，拼接起来即可<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"># 遍历字典</span><br><span class="line">for (key, value) in dic.items():</span><br><span class="line"></span><br><span class="line"># 转换成swift格式</span><br><span class="line">if isinstance(value, str):</span><br><span class="line">    return &quot;String&quot;</span><br><span class="line">elif isinstance(value, float):</span><br><span class="line">    return &quot;Float&quot;</span><br><span class="line"></span><br><span class="line"># 字符串数组拼接</span><br><span class="line">result= &apos;&apos;.join([line+&apos;\n&apos; for line in res])</span><br></pre></td></tr></table></figure></p>
-<p>  推荐两个不错学习资源：<a href="http://www.jianshu.com/p/8ec836ddef5e" target="_blank" rel="noopener">Python 简单入门指北（试读）</a>，<a href="https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000" target="_blank" rel="noopener">Python教程- 廖雪峰</a></p>
-<h3 id="Cocoa-APP生成"><a href="#Cocoa-APP生成" class="headerlink" title="Cocoa APP生成"></a>Cocoa APP生成</h3><h4 id="1-界面搭建"><a href="#1-界面搭建" class="headerlink" title="1. 界面搭建"></a>1. 界面搭建</h4><p>Mac OS的界面搭建和iOS超级相似，如果会iOS编程，3分钟就能搞定，这里不做赘述。</p>
-<blockquote>
-<p><img src="https://user-gold-cdn.xitu.io/2017/11/8/b188c6190dd0acf63cf50f5a3c20a7dc?w=1033&h=528&f=png&s=15593" alt></p>
-</blockquote>
-<h4 id="2-图标生成"><a href="#2-图标生成" class="headerlink" title="2. 图标生成"></a>2. 图标生成</h4><p>制作一个1024*1024的图片，我习惯使用<a href="http://www.pixelmator.com/mac/" target="_blank" rel="noopener">pixelmator</a>，个人感觉比较简单上手，然后生成若干张对应尺寸的图标，这种app有很多，我用的是<a href="https://itunes.apple.com/cn/app/id476533227?mt=12" target="_blank" rel="noopener">Prepo</a></p>
-<blockquote>
-<p><img src="https://user-gold-cdn.xitu.io/2017/11/8/95cbe825eb9a297aed97bc2b5f1a4402?w=895&h=283&f=png&s=67311" alt></p>
-</blockquote>
-<h4 id="3-Cocoa-运行python脚本"><a href="#3-Cocoa-运行python脚本" class="headerlink" title="3. Cocoa 运行python脚本"></a>3. Cocoa 运行python脚本</h4><p>NSTask已经被废弃，应该使用Process()执行脚本文件</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">let buildTask = Process()</span><br><span class="line">let outPip = Pipe()</span><br><span class="line">let errorPipe = Pipe()</span><br><span class="line"></span><br><span class="line">buildTask.launchPath = &quot;/usr/bin/python&quot;</span><br><span class="line">// arguments是[String]类型，第一个元素应该为xx.py的路径，后面元素为该py接受的参数</span><br><span class="line">buildTask.arguments = args</span><br><span class="line">buildTask.standardInput = Pipe()</span><br><span class="line">buildTask.standardOutput = outPip</span><br><span class="line">buildTask.standardError = errorPipe</span><br><span class="line">// 脚本执行完毕后的回调</span><br><span class="line">buildTask.terminationHandler = &#123; p in</span><br><span class="line">      self.taskFinish()</span><br><span class="line">&#125;</span><br><span class="line">buildTask.launch()</span><br><span class="line">buildTask.waitUntilExit()</span><br><span class="line"></span><br><span class="line">// 脚本的输出结果，即脚本文件的print()方法打印的内容</span><br><span class="line">let data = outPip.fileHandleForReading.readDataToEndOfFile()</span><br><span class="line">let output = String(data: data, encoding: String.Encoding.utf8)</span><br><span class="line">        </span><br><span class="line">// 错误处理, python系统错误</span><br><span class="line">let errorData = errorPipe.fileHandleForReading.readDataToEndOfFile()</span><br><span class="line">let errorStr = String(data: errorData, encoding: String.Encoding.utf8)</span><br><span class="line">if let aError = errorStr, aError != &quot;&quot; &#123;</span><br><span class="line">    sendError(&quot;解析错误\r\n&quot; + aError)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="2-Charles-MacOS"><a href="#2-Charles-MacOS" class="headerlink" title="2.Charles(MacOS)"></a>2.Charles(MacOS)</h3><ul>
+<li>安装：<a href="https://www.charlesproxy.com/" target="_blank" rel="noopener">Charles Web Debugging Proxy</a></li>
+<li>配置：</li>
+</ul>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 1. 手机配置</span></span><br><span class="line">手机 wifi 设置代理，服务器地址为为电脑 ip 地址 xxx.xxx.xxx.xxx，端口为 <span class="number">8888</span></span><br><span class="line"><span class="comment"># 2. 手机安装 SSL 证书</span></span><br><span class="line">Help -&gt; SSL Proxying -&gt; Install Charles Root Certificate on a Mobile Device</span><br><span class="line">safari 打开地址 chls.pro/ssl，下载根证书</span><br><span class="line"><span class="comment"># 3. 完全信任证书</span></span><br><span class="line">设置 &gt; 通用 &gt; 关于本机 &gt; 证书信任设置 &gt; 针对根证书启用完全信任</span><br><span class="line"><span class="comment"># 4. 设置Proxy</span></span><br><span class="line">Proxy -&gt; SSL Proxying Settings...，勾选 Enable SSL Proxying</span><br><span class="line"><span class="comment"># 5. 添加域名</span></span><br><span class="line"><span class="symbol">Host:</span> <span class="symbol">https:</span>/<span class="regexp">/mp.weixin.qq.com  Port: 443</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="scrapy-python-package-使用"><a href="#scrapy-python-package-使用" class="headerlink" title="scrapy(python package) 使用"></a>scrapy(python package) 使用</h2><ul>
+<li>官网介绍：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">An open source and collaborative framework for extracting the data you need from websites.</span><br><span class="line">In a fast, simple, yet extensible way.</span><br></pre></td></tr></table></figure>
 
 <ul>
-<li><p>arguments：脚本参数</p>
-<blockquote>
-<p>let scripyPath = Bundle.main.path(forResource: “Parse”, ofType: “py”)! // 脚本路径<br>let para1 = “input info” // 传入参数，通过sys.argv[I]获取<br>let args = [scripyPath, para1]<br>buildTask.arguments = args</p>
-</blockquote>
-</li>
-<li><p>standardOutput：脚本输出</p>
-<blockquote>
-<p>执行脚本后可通过output获取结果<br>注意：脚本的返回结果不是通过函数的return，而是通过调用print(infos)函数，即infos作为结果返回<br>let data = outPip.fileHandleForReading.readDataToEndOfFile()<br>let output = String(data: data, encoding: String.Encoding.utf8)</p>
-</blockquote>
-</li>
-<li><p>standardError: 错误输出</p>
-<blockquote>
-<p>解决python的exception信息<br>task.terminationStatus 不等于0也能判断为失败</p>
-</blockquote>
-</li>
+<li>使用：</li>
 </ul>
-<hr>
-<h2 id="3-封装"><a href="#3-封装" class="headerlink" title="3. 封装"></a>3. 封装</h2><p>  Cocoa 运行python脚本的代码，写起来虽然不算特别麻烦，但总也说不是简洁，于是重新封装了一个类方便调用：<a href="https://github.com/515783034/json2swift/blob/master/json2Swift/CocoaPython.swift" target="_blank" rel="noopener">CocoaPython</a><br>使用如下：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> script = <span class="type">CocoaPython</span>(scrPath: pyPath)</span><br><span class="line">script.runAsync()</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> 1. 创建项目 WCSpider</span><br><span class="line">scrapy startproject WCSpider</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> 2. 切换到项目目录</span><br><span class="line">cd WCSpider</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> 3. 创建爬虫 wechat</span><br><span class="line">scrapy genspider wechat mp.qq.com</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> 4. 设置 Agent</span><br><span class="line">在 settings 中打开 Agent 注释</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> 5. 添加 item</span><br><span class="line">在 items.py 中完成 item 创建</span><br><span class="line">    name = scrapy.Field</span><br><span class="line">    age = scrapy.Field</span><br><span class="line">    ...</span><br><span class="line">    </span><br><span class="line"><span class="meta">#</span> 6. 解析 response</span><br><span class="line">设置 start_urls</span><br><span class="line">在 wechat.py 中解析 response, 返回item</span><br><span class="line">    res = response.xpath(...)</span><br><span class="line">    item['name'] = res['_name']</span><br><span class="line">    item['age'] = res['_age']</span><br><span class="line">    ...</span><br><span class="line">    yield item</span><br><span class="line">    </span><br><span class="line"><span class="meta">#</span> 7. 设置管道文件</span><br><span class="line">在 open_spider 初始化数据库等</span><br><span class="line">    self.f = open("file.json","w")</span><br><span class="line">在 close_spider 关闭数据库等</span><br><span class="line">    self.f.close()</span><br><span class="line">在 deal_spider 处理 item</span><br><span class="line">    self.f.write(json.dumps(dict(item)))</span><br><span class="line">在 settings 中启用该管道文件</span><br></pre></td></tr></table></figure>
 
-<p>详细说明：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// python脚本文件路径</span></span><br><span class="line"><span class="keyword">guard</span> <span class="keyword">let</span> aPath = <span class="type">Bundle</span>.main.path(forResource: <span class="string">"Parse"</span>, ofType: <span class="string">"py"</span>) <span class="keyword">else</span> &#123; <span class="keyword">return</span> &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// args: py文件接受的参数列表，通过sys.argv[i]访问</span></span><br><span class="line"><span class="comment">// block: 完成后的回调，包括返回值和错误内容</span></span><br><span class="line"><span class="keyword">let</span> script = <span class="type">CocoaPython</span>(scrPath: aPath, args: [<span class="string">""</span>]) &#123; [<span class="keyword">weak</span> <span class="keyword">self</span>] <span class="keyword">in</span></span><br><span class="line">    <span class="built_in">print</span>($<span class="number">0</span>) <span class="comment">// 返回值，所有的py中print()的内容</span></span><br><span class="line">    <span class="built_in">print</span>($<span class="number">1</span>) <span class="comment">// py中的错误信息</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">script.spliPara = <span class="string">"$"</span> <span class="comment">// 如果有多个结果，每个结果之间的分隔符，不设置则将所有的结果当成一个结果返回，即result == result[0]</span></span><br><span class="line">script.runAsync() <span class="comment">// 异步执行，回调在异步主线程中调用</span></span><br><span class="line"><span class="comment">// or script.runAsync(asyncComlete: false) // 异步执行，回调在global中执行</span></span><br><span class="line"><span class="comment">// or script.runSync() // 同步执行</span></span><br></pre></td></tr></table></figure>
+<h2 id="公众号历史消息抓包"><a href="#公众号历史消息抓包" class="headerlink" title="公众号历史消息抓包"></a>公众号历史消息抓包</h2><p>本次抓包以 Charles 为例。</p>
+<h3 id="1-获取首页链接"><a href="#1-获取首页链接" class="headerlink" title="1.获取首页链接"></a>1.获取首页链接</h3><p><img src="https://diycode.b0.upaiyun.com/photo/2018/2f41e5d1a0a4ad2851619b136b6db5f5.png" alt="抓包"></p>
+<p>如上图所示，需要的内容在 var msgList = ‘{…}’ 中，由于并不是标准 html，所以这里 xpath 并不好用，可尝试正则表达式快速取出内容。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">rex = <span class="string">"msgList = '(&#123;.*?&#125;)'"</span></span><br><span class="line">pattern = re.compile(pattern=rex, flags=re.S)</span><br><span class="line">match = pattern.search(response.text)</span><br></pre></td></tr></table></figure>
 
-<hr>
-<h2 id="4-资源"><a href="#4-资源" class="headerlink" title="4. 资源"></a>4. 资源</h2><p>github地址:  <a href="https://github.com/515783034/json2swift" target="_blank" rel="noopener">json2swift</a><br>OS X app:  <a href="https://pan.baidu.com/s/1skW4Jxj" target="_blank" rel="noopener">json2Swift.app</a><br>python 脚本:  <a href="https://pan.baidu.com/s/1kV1jhbh" target="_blank" rel="noopener">json2Swift.py</a></p>
+<p>取出并格式化匹配项，本例中公众号中的内容都是以文本的形式发送，所以直接取 comm_msg_info 内容，具体请根据实际情况解析。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> match:</span><br><span class="line">    data = match.group(<span class="number">1</span>)</span><br><span class="line">    data = html.unescape(data)</span><br><span class="line">    data = json.loads(data)</span><br><span class="line">    articles = data.get(<span class="string">"list"</span>)</span><br><span class="line"></span><br><span class="line">    item = WechatItem()</span><br><span class="line">    <span class="keyword">for</span> article <span class="keyword">in</span> articles:</span><br><span class="line">        info = article[<span class="string">"comm_msg_info"</span>]</span><br><span class="line">        content = html.unescape(info[<span class="string">"content"</span>])</span><br><span class="line">        <span class="comment"># 将获取的数据传递给管道</span></span><br><span class="line">        item[<span class="string">"content"</span>] = content</span><br><span class="line">        item[<span class="string">"we_id"</span>] = info[<span class="string">"id"</span>]</span><br><span class="line">        item[<span class="string">"datetime"</span>] = info[<span class="string">"datetime"</span>]</span><br><span class="line">        item[<span class="string">"we_type"</span>] = info[<span class="string">"type"</span>]</span><br><span class="line">        <span class="keyword">yield</span> item</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-获取上拉刷新链接"><a href="#2-获取上拉刷新链接" class="headerlink" title="2. 获取上拉刷新链接"></a>2. 获取上拉刷新链接</h3><p>向上滚动历史列表，当到接近最底部时，会自动获取更多内容，此时可以通过抓包获取内容。<br><img src="https://diycode.b0.upaiyun.com/photo/2018/784da6b14584170d45393a0476105e63.png" alt></p>
+<p>如图所示，返回的是 json 格式内容，通过 can_msg_continue 确定是否有后续内容，general_msg_list 是解析的内容。通过分析多个加载历史可知，offset 控制加载数据的位置。<br><strong>–本例中使用 python 第三方库 requests 加载数据</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">getMore</span><span class="params">()</span>:</span></span><br><span class="line">   <span class="comment"># header</span></span><br><span class="line">	header = sj_utils.header2dict(base_header)</span><br><span class="line">	response = requests.get(getUrl(),headers = header, verify = <span class="literal">False</span>)</span><br><span class="line">	</span><br><span class="line">	js = json.loads(response.text)</span><br><span class="line">	<span class="keyword">if</span> js[<span class="string">"errmsg"</span>] == <span class="string">"ok"</span>:</span><br><span class="line">		alist = js[<span class="string">"general_msg_list"</span>] <span class="comment"># 内容是 json 字符串，需要先转为 json</span></span><br><span class="line">		alist = json.loads(alist)[<span class="string">"list"</span>]</span><br><span class="line">		<span class="keyword">for</span> item <span class="keyword">in</span> alist:</span><br><span class="line">		  <span class="comment"># 具体处理</span></span><br><span class="line">			print(item[<span class="string">"comm_msg_info"</span>][<span class="string">"content"</span>])</span><br><span class="line"></span><br><span class="line">	<span class="keyword">if</span> js[<span class="string">"can_msg_continue"</span>]:</span><br><span class="line">	   url_offset += <span class="number">10</span> <span class="comment"># 设置偏移量</span></span><br><span class="line">		getMore()</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-处理数据"><a href="#3-处理数据" class="headerlink" title="3.处理数据"></a>3.处理数据</h3><p>开头已经介绍了 scrapy 使用，通过管道文件可以轻松处理爬取内容。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 保存 json 文件</span></span><br><span class="line">self.f.write(json.dumps(dict(item)))</span><br></pre></td></tr></table></figure>
+
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
+<li><a href="https://juejin.im/book/5a157c155188254a701eb3c1" target="_blank" rel="noopener">基于 Python 实现微信公众号爬虫</a></li>
+</ul>
 
       
     </div>
@@ -624,9 +592,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/macos/" rel="tag"># macos</a>
-          
             <a href="/tags/Python/" rel="tag"># Python</a>
+          
+            <a href="/tags/scrapy/" rel="tag"># scrapy</a>
+          
+            <a href="/tags/抓包/" rel="tag"># 抓包</a>
           
         </div>
       
@@ -639,14 +609,18 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/12/08/user-mars-in-swift/" rel="next" title="在 swift 中接入微信开源库 Mars">
+                <i class="fa fa-chevron-left"></i> 在 swift 中接入微信开源库 Mars
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/12/08/在swift中接入微信开源库Mars/" rel="prev" title="在 swift 中接入微信开源库 Mars">
-                在 swift 中接入微信开源库 Mars <i class="fa fa-chevron-right"></i>
+              <a href="/2018/03/20/create-ios-framework/" rel="prev" title="自建 iOS 静态库并用 pod 管理">
+                自建 iOS 静态库并用 pod 管理 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -852,7 +826,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-为什么要写这个app？"><span class="nav-number">1.</span> <span class="nav-text">1. 为什么要写这个app？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-技术栈"><span class="nav-number">2.</span> <span class="nav-text">2. 技术栈</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#python最最最基础知识"><span class="nav-number">2.1.</span> <span class="nav-text">python最最最基础知识</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-json反序列化"><span class="nav-number">2.1.1.</span> <span class="nav-text">1. json反序列化</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-字符串操作"><span class="nav-number">2.1.2.</span> <span class="nav-text">2. 字符串操作</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Cocoa-APP生成"><span class="nav-number">2.2.</span> <span class="nav-text">Cocoa APP生成</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-界面搭建"><span class="nav-number">2.2.1.</span> <span class="nav-text">1. 界面搭建</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-图标生成"><span class="nav-number">2.2.2.</span> <span class="nav-text">2. 图标生成</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-Cocoa-运行python脚本"><span class="nav-number">2.2.3.</span> <span class="nav-text">3. Cocoa 运行python脚本</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-封装"><span class="nav-number">3.</span> <span class="nav-text">3. 封装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-资源"><span class="nav-number">4.</span> <span class="nav-text">4. 资源</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#抓包工具配置"><span class="nav-number">1.</span> <span class="nav-text">抓包工具配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Fiddler-windows"><span class="nav-number">1.1.</span> <span class="nav-text">1. Fiddler(windows)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Charles-MacOS"><span class="nav-number">1.2.</span> <span class="nav-text">2.Charles(MacOS)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#scrapy-python-package-使用"><span class="nav-number">2.</span> <span class="nav-text">scrapy(python package) 使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#公众号历史消息抓包"><span class="nav-number">3.</span> <span class="nav-text">公众号历史消息抓包</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-获取首页链接"><span class="nav-number">3.1.</span> <span class="nav-text">1.获取首页链接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-获取上拉刷新链接"><span class="nav-number">3.2.</span> <span class="nav-text">2. 获取上拉刷新链接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-处理数据"><span class="nav-number">3.3.</span> <span class="nav-text">3.处理数据</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考"><span class="nav-number">4.</span> <span class="nav-text">参考</span></a></li></ol></div>
             
 
           </div>
@@ -864,8 +838,6 @@
 
     </div>
   </aside>
-  
-    <div id="sidebar-dimmer"></div>
   
 
 
@@ -937,6 +909,8 @@
       <div class="back-to-top">
         <i class="fa fa-arrow-up"></i>
         
+          <span id="scrollpercent"><span>0</span>%</span>
+        
       </div>
     
 
@@ -966,6 +940,8 @@
 
 
 
+  
+
 
 
 
@@ -990,6 +966,9 @@
 
   
   <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/fancybox/source/jquery.fancybox.pack.js"></script>
 
   
   <script src="/lib/reading_progress/reading_progress.js"></script>
@@ -1038,19 +1017,17 @@
     <!-- LOCAL: You can save these files to your site and update links -->
 
   
-  <script src="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/gitmint.browser.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/gitment.browser.js"></script>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/default.css">
 <!-- END LOCAL -->
 
 <script>
   function renderGitment() {
-    var gitment = new Gitmint({
-      id: '1510193410000',
+    var gitment = new Gitment({
+      id: '1517883010000',
       owner: '515783034',
       repo: '515783034.github.io',
-      
-        lang: '' || navigator.language || navigator.systemLanguage || navigator.userLanguage,
       
       oauth: {
       

@@ -11,10 +11,8 @@
 
 
 
-  
 
-
-<html class="theme-next mist use-motion" lang="zh-CN">
+<html class="theme-next mist" lang="zh-CN">
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -37,6 +35,10 @@
 
 
 
+
+  
+  
+  <link rel="stylesheet" href="/lib/fancybox/source/jquery.fancybox.css">
 
 
 
@@ -72,14 +74,14 @@
     root: '/',
     scheme: 'Mist',
     version: '7.1.1',
-    sidebar: {"position":"right","display":"always","offset":12,"onmobile":false,"dimmer":true},
+    sidebar: {"position":"right","display":"post","offset":12,"onmobile":false,"dimmer":false},
     back2top: true,
     back2top_sidebar: false,
-    fancybox: false,
+    fancybox: true,
     fastclick: false,
     lazyload: false,
     tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     algolia: {
       applicationID: '',
       apiKey: '',
@@ -96,22 +98,24 @@
 
 
 
-  <meta name="description" content="抓包工具配置1. Fiddler(windows) 安装：https://www.telerik.com/download/fiddler 配置：    12345678910111213# 1. 允许远程连接Tools &amp;gt; Fiddler Options &amp;gt; Connections &amp;gt; Allow remote computers to connect# 2. 支持 HTTP">
+  <meta name="description" content="1 介绍1.1 marsmars是微信官方的跨平台跨业务的终端基础组件。  comm：可以独立使用的公共库，包括 socket、线程、消息队列、协程等； xlog：高可靠性高性能的运行期日志组件； SDT： 网络诊断组件； STN： 信令分发网络模块，也是 Mars 最主要的部分。">
 <meta name="keywords" content="Python,scrapy,抓包">
 <meta property="og:type" content="article">
-<meta property="og:title" content="用 scrapy 爬微信公众号的内容">
-<meta property="og:url" content="http://yoursite.com/2018/02/06/用 scrapy 爬微信公众号的内容/index.html">
-<meta property="og:site_name" content="ashen23">
-<meta property="og:description" content="抓包工具配置1. Fiddler(windows) 安装：https://www.telerik.com/download/fiddler 配置：    12345678910111213# 1. 允许远程连接Tools &amp;gt; Fiddler Options &amp;gt; Connections &amp;gt; Allow remote computers to connect# 2. 支持 HTTP">
+<meta property="og:title" content="在 swift 中接入微信开源库 Mars">
+<meta property="og:url" content="http://yoursite.com/2017/12/08/user-mars-in-swift/index.html">
+<meta property="og:site_name" content="ashen23 Codeble">
+<meta property="og:description" content="1 介绍1.1 marsmars是微信官方的跨平台跨业务的终端基础组件。  comm：可以独立使用的公共库，包括 socket、线程、消息队列、协程等； xlog：高可靠性高性能的运行期日志组件； SDT： 网络诊断组件； STN： 信令分发网络模块，也是 Mars 最主要的部分。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://diycode.b0.upaiyun.com/photo/2018/d5c2fae2609a20f63ce8874272126d01.png">
-<meta property="og:image" content="https://diycode.b0.upaiyun.com/photo/2018/2f41e5d1a0a4ad2851619b136b6db5f5.png">
-<meta property="og:image" content="https://diycode.b0.upaiyun.com/photo/2018/784da6b14584170d45393a0476105e63.png">
-<meta property="og:updated_time" content="2019-05-30T07:41:17.171Z">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2017/12/8/16033e55aca73b9e?imageView2/2/w/480/h/480/q/85/interlace/1">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2017/12/7/1602f5e627031bc8?w=885&h=580&f=png&s=64116">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2017/12/7/1602f5e5c25aeef5?w=680&h=415&f=png&s=309178">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2017/12/7/1602f5e5c27f08fa?w=701&h=217&f=png&s=34907">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2017/12/7/1602f5e5c21b74ee?w=614&h=325&f=png&s=295127">
+<meta property="og:updated_time" content="2019-05-30T07:49:08.978Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="用 scrapy 爬微信公众号的内容">
-<meta name="twitter:description" content="抓包工具配置1. Fiddler(windows) 安装：https://www.telerik.com/download/fiddler 配置：    12345678910111213# 1. 允许远程连接Tools &amp;gt; Fiddler Options &amp;gt; Connections &amp;gt; Allow remote computers to connect# 2. 支持 HTTP">
-<meta name="twitter:image" content="https://diycode.b0.upaiyun.com/photo/2018/d5c2fae2609a20f63ce8874272126d01.png">
+<meta name="twitter:title" content="在 swift 中接入微信开源库 Mars">
+<meta name="twitter:description" content="1 介绍1.1 marsmars是微信官方的跨平台跨业务的终端基础组件。  comm：可以独立使用的公共库，包括 socket、线程、消息队列、协程等； xlog：高可靠性高性能的运行期日志组件； SDT： 网络诊断组件； STN： 信令分发网络模块，也是 Mars 最主要的部分。">
+<meta name="twitter:image" content="https://user-gold-cdn.xitu.io/2017/12/8/16033e55aca73b9e?imageView2/2/w/480/h/480/q/85/interlace/1">
 
 
 
@@ -119,7 +123,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/2018/02/06/用 scrapy 爬微信公众号的内容/">
+  <link rel="canonical" href="http://yoursite.com/2017/12/08/user-mars-in-swift/">
 
 
 
@@ -129,7 +133,7 @@
   };
 </script>
 
-  <title>用 scrapy 爬微信公众号的内容 | ashen23</title>
+  <title>在 swift 中接入微信开源库 Mars | ashen23 Codeble</title>
   
 
 
@@ -188,7 +192,7 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">ashen23</span>
+        <span class="site-title">ashen23 Codeble</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -246,7 +250,7 @@
 
     
 
-    <a href="/about/index.html" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
 
   </li>
         
@@ -387,7 +391,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/06/用 scrapy 爬微信公众号的内容/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/08/user-mars-in-swift/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ashen23">
@@ -396,7 +400,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ashen23">
+      <meta itemprop="name" content="ashen23 Codeble">
     </span>
 
     
@@ -404,7 +408,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">用 scrapy 爬微信公众号的内容
+          <h1 class="post-title" itemprop="name headline">在 swift 中接入微信开源库 Mars
 
               
             
@@ -412,6 +416,7 @@
         
 
         <div class="post-meta">
+          
           <span class="post-time">
 
             
@@ -419,26 +424,11 @@
             
 
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2018-02-06 10:10:10" itemprop="dateCreated datePublished" datetime="2018-02-06T10:10:10+08:00">2018-02-06</time>
-            
 
             
               
 
               
-                
-                <span class="post-meta-divider">|</span>
                 
 
                 <span class="post-meta-item-icon">
@@ -447,7 +437,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-05-30 15:41:17" itemprop="dateModified" datetime="2019-05-30T15:41:17+08:00">2019-05-30</time>
+                <time title="修改时间：2019-05-30 15:49:08" itemprop="dateModified" datetime="2019-05-30T15:49:08+08:00">2019-05-30</time>
               
             
           </span>
@@ -474,19 +464,6 @@
 
           
             
-            
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">评论数：</span>
-                <a href="/2018/02/06/用 scrapy 爬微信公众号的内容/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count gitment-comments-count" data-xid="/2018/02/06/用 scrapy 爬微信公众号的内容/" itemprop="commentCount"></span>
-                </a>
-              </span>
             
           
 
@@ -519,48 +496,58 @@
       
 
       
-        <p><img src="https://diycode.b0.upaiyun.com/photo/2018/d5c2fae2609a20f63ce8874272126d01.png" alt></p>
-<h2 id="抓包工具配置"><a href="#抓包工具配置" class="headerlink" title="抓包工具配置"></a>抓包工具配置</h2><h3 id="1-Fiddler-windows"><a href="#1-Fiddler-windows" class="headerlink" title="1. Fiddler(windows)"></a>1. Fiddler(windows)</h3><ul>
-<li>安装：<a href="https://www.telerik.com/download/fiddler" target="_blank" rel="noopener">https://www.telerik.com/download/fiddler</a></li>
-<li>配置：  </li>
-</ul>
-<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 1. 允许远程连接</span></span><br><span class="line">Tools &gt; Fiddler Options &gt; Connections &gt; Allow remote computers to connect</span><br><span class="line"><span class="comment"># 2. 支持 HTTPS</span></span><br><span class="line">Tools &gt; Fiddler Options &gt; HTTPS &gt; Decrypt HTTPS traffic</span><br><span class="line"><span class="comment"># 3. 重启</span></span><br><span class="line">restart Fiddler</span><br><span class="line"></span><br><span class="line"><span class="comment"># 4. 手机配置</span></span><br><span class="line">手机 wifi 设置代理，服务器地址为为电脑 ip 地址 xxx.xxx.xxx.xxx，端口为 <span class="number">8888</span></span><br><span class="line"><span class="comment"># 5. 下载根证书</span></span><br><span class="line">safari 打开 xxx.xxx.xxx.<span class="symbol">xxx:</span><span class="number">8888</span>， 下载安装根证书</span><br><span class="line"><span class="comment"># 6. 完全信任证书</span></span><br><span class="line">设置 &gt; 通用 &gt; 关于本机 &gt; 证书信任设置 &gt; 针对根证书启用完全信任</span><br></pre></td></tr></table></figure>
-
-<a id="more"></a>
-<h3 id="2-Charles-MacOS"><a href="#2-Charles-MacOS" class="headerlink" title="2.Charles(MacOS)"></a>2.Charles(MacOS)</h3><ul>
-<li>安装：<a href="https://www.charlesproxy.com/" target="_blank" rel="noopener">Charles Web Debugging Proxy</a></li>
-<li>配置：</li>
-</ul>
-<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 1. 手机配置</span></span><br><span class="line">手机 wifi 设置代理，服务器地址为为电脑 ip 地址 xxx.xxx.xxx.xxx，端口为 <span class="number">8888</span></span><br><span class="line"><span class="comment"># 2. 手机安装 SSL 证书</span></span><br><span class="line">Help -&gt; SSL Proxying -&gt; Install Charles Root Certificate on a Mobile Device</span><br><span class="line">safari 打开地址 chls.pro/ssl，下载根证书</span><br><span class="line"><span class="comment"># 3. 完全信任证书</span></span><br><span class="line">设置 &gt; 通用 &gt; 关于本机 &gt; 证书信任设置 &gt; 针对根证书启用完全信任</span><br><span class="line"><span class="comment"># 4. 设置Proxy</span></span><br><span class="line">Proxy -&gt; SSL Proxying Settings...，勾选 Enable SSL Proxying</span><br><span class="line"><span class="comment"># 5. 添加域名</span></span><br><span class="line"><span class="symbol">Host:</span> <span class="symbol">https:</span>/<span class="regexp">/mp.weixin.qq.com  Port: 443</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="scrapy-python-package-使用"><a href="#scrapy-python-package-使用" class="headerlink" title="scrapy(python package) 使用"></a>scrapy(python package) 使用</h2><ul>
-<li>官网介绍：</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">An open source and collaborative framework for extracting the data you need from websites.</span><br><span class="line">In a fast, simple, yet extensible way.</span><br></pre></td></tr></table></figure>
-
+        <p><img src="https://user-gold-cdn.xitu.io/2017/12/8/16033e55aca73b9e?imageView2/2/w/480/h/480/q/85/interlace/1" alt></p>
+<h2 id="1-介绍"><a href="#1-介绍" class="headerlink" title="1 介绍"></a>1 介绍</h2><h3 id="1-1-mars"><a href="#1-1-mars" class="headerlink" title="1.1 mars"></a>1.1 mars</h3><p><a href="https://github.com/Tencent/mars" target="_blank" rel="noopener">mars</a>是微信官方的跨平台跨业务的终端基础组件。</p>
 <ul>
-<li>使用：</li>
+<li>comm：可以独立使用的公共库，包括 socket、线程、消息队列、协程等；</li>
+<li>xlog：高可靠性高性能的运行期日志组件；</li>
+<li>SDT： 网络诊断组件；</li>
+<li>STN： 信令分发网络模块，也是 Mars 最主要的部分。<a id="more"></a>
+<img src="https://user-gold-cdn.xitu.io/2017/12/7/1602f5e627031bc8?w=885&h=580&f=png&s=64116" alt><h3 id="1-2-protobuf"><a href="#1-2-protobuf" class="headerlink" title="1.2 protobuf"></a>1.2 protobuf</h3><a href="https://github.com/google/protobuf" target="_blank" rel="noopener">protobuf</a>: Google’s data interchange format.<br>protobuf是google提供的一个开源序列化框架，类似于XML，JSON这样的数据表示语言，其最大的特点是基于二进制，因此比传统的XML表示高效短小得多。虽然是二进制数据格式，但并没有因此变得复杂，开发人员通过按照一定的语法定义结构化的消息格式，然后送给命令行工具，工具将自动生成相关的类，可以支持php、java、c++、python等语言环境。通过将这些类包含在项目中，可以很轻松的调用相关方法来完成业务消息的序列化与反序列化工作。</li>
 </ul>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> 1. 创建项目 WCSpider</span><br><span class="line">scrapy startproject WCSpider</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> 2. 切换到项目目录</span><br><span class="line">cd WCSpider</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> 3. 创建爬虫 wechat</span><br><span class="line">scrapy genspider wechat mp.qq.com</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> 4. 设置 Agent</span><br><span class="line">在 settings 中打开 Agent 注释</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> 5. 添加 item</span><br><span class="line">在 items.py 中完成 item 创建</span><br><span class="line">    name = scrapy.Field</span><br><span class="line">    age = scrapy.Field</span><br><span class="line">    ...</span><br><span class="line">    </span><br><span class="line"><span class="meta">#</span> 6. 解析 response</span><br><span class="line">设置 start_urls</span><br><span class="line">在 wechat.py 中解析 response, 返回item</span><br><span class="line">    res = response.xpath(...)</span><br><span class="line">    item['name'] = res['_name']</span><br><span class="line">    item['age'] = res['_age']</span><br><span class="line">    ...</span><br><span class="line">    yield item</span><br><span class="line">    </span><br><span class="line"><span class="meta">#</span> 7. 设置管道文件</span><br><span class="line">在 open_spider 初始化数据库等</span><br><span class="line">    self.f = open("file.json","w")</span><br><span class="line">在 close_spider 关闭数据库等</span><br><span class="line">    self.f.close()</span><br><span class="line">在 deal_spider 处理 item</span><br><span class="line">    self.f.write(json.dumps(dict(item)))</span><br><span class="line">在 settings 中启用该管道文件</span><br></pre></td></tr></table></figure>
+<h2 id="2-创建framework"><a href="#2-创建framework" class="headerlink" title="2 创建framework"></a>2 创建framework</h2><h3 id="2-1-生成framework"><a href="#2-1-生成framework" class="headerlink" title="2.1 生成framework"></a>2.1 生成framework</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">// 下载 mars 仓库: </span><br><span class="line">git clone https://github.com/Tencent/mars.git</span><br><span class="line">// 切换到 libraries路径</span><br><span class="line">cd mars-master/mars/libraries</span><br><span class="line">// 执行python脚本</span><br><span class="line">python build_apple.py</span><br><span class="line">	提示输入保存文件夹的前缀:(随意)</span><br><span class="line">	input prefix for save directory. like trunk,br,tag:</span><br><span class="line">	选择build的类型: 1代表iphone版mars(其中包括xlog)</span><br><span class="line">	Enter menu:</span><br><span class="line">	build mars for iphone.</span><br></pre></td></tr></table></figure>
 
-<h2 id="公众号历史消息抓包"><a href="#公众号历史消息抓包" class="headerlink" title="公众号历史消息抓包"></a>公众号历史消息抓包</h2><p>本次抓包以 Charles 为例。</p>
-<h3 id="1-获取首页链接"><a href="#1-获取首页链接" class="headerlink" title="1.获取首页链接"></a>1.获取首页链接</h3><p><img src="https://diycode.b0.upaiyun.com/photo/2018/2f41e5d1a0a4ad2851619b136b6db5f5.png" alt="抓包"></p>
-<p>如上图所示，需要的内容在 var msgList = ‘{…}’ 中，由于并不是标准 html，所以这里 xpath 并不好用，可尝试正则表达式快速取出内容。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">rex = <span class="string">"msgList = '(&#123;.*?&#125;)'"</span></span><br><span class="line">pattern = re.compile(pattern=rex, flags=re.S)</span><br><span class="line">match = pattern.search(response.text)</span><br></pre></td></tr></table></figure>
+<p><img src="https://user-gold-cdn.xitu.io/2017/12/7/1602f5e5c25aeef5?w=680&h=415&f=png&s=309178" alt="success..."></p>
+<h3 id="2-2-引入framework"><a href="#2-2-引入framework" class="headerlink" title="2.2 引入framework"></a>2.2 引入framework</h3><p>// log_crypt.cc.rewriteme, log_crypt.h 这两个文件已被废弃,可直接删除</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// 删除.rewriteme的后缀</span><br><span class="line">共三个文件log_crypt.cc.rewriteme(废弃),longlink_packer.cc.rewriteme, shortlink_packer.cc.rewriteme</span><br><span class="line">// 拖入工程,并添加库</span><br><span class="line">SystemConfiguration, CoreTelephony, Foundation, libz.tbd, libresolv9.tbd</span><br></pre></td></tr></table></figure>
 
-<p>取出并格式化匹配项，本例中公众号中的内容都是以文本的形式发送，所以直接取 comm_msg_info 内容，具体请根据实际情况解析。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> match:</span><br><span class="line">    data = match.group(<span class="number">1</span>)</span><br><span class="line">    data = html.unescape(data)</span><br><span class="line">    data = json.loads(data)</span><br><span class="line">    articles = data.get(<span class="string">"list"</span>)</span><br><span class="line"></span><br><span class="line">    item = WechatItem()</span><br><span class="line">    <span class="keyword">for</span> article <span class="keyword">in</span> articles:</span><br><span class="line">        info = article[<span class="string">"comm_msg_info"</span>]</span><br><span class="line">        content = html.unescape(info[<span class="string">"content"</span>])</span><br><span class="line">        <span class="comment"># 将获取的数据传递给管道</span></span><br><span class="line">        item[<span class="string">"content"</span>] = content</span><br><span class="line">        item[<span class="string">"we_id"</span>] = info[<span class="string">"id"</span>]</span><br><span class="line">        item[<span class="string">"datetime"</span>] = info[<span class="string">"datetime"</span>]</span><br><span class="line">        item[<span class="string">"we_type"</span>] = info[<span class="string">"type"</span>]</span><br><span class="line">        <span class="keyword">yield</span> item</span><br></pre></td></tr></table></figure>
+<p><img src="https://user-gold-cdn.xitu.io/2017/12/7/1602f5e5c27f08fa?w=701&h=217&f=png&s=34907" alt></p>
+<h3 id="2-3-xlog"><a href="#2-3-xlog" class="headerlink" title="2.3 xlog"></a>2.3 xlog</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">/// 添加文件(demo中有)</span><br><span class="line">LogHelper.h(.mm)、LogUtil.h(.mm), appender-swift-bridge.h(.mm)</span><br><span class="line">/// 桥接头文件添加</span><br><span class="line">#import &quot;appender-swift-bridge.h&quot;</span><br><span class="line"></span><br><span class="line">// 配置xlog, 参数分别代表:debug时记录的级别,release时记录的级别,保存文件的相对路径,文件前缀</span><br><span class="line">JinkeyMarsBridge().initXlogger(...)</span><br><span class="line">// 自定义log</span><br><span class="line">JinkeyMarsBridge().log(...)</span><br></pre></td></tr></table></figure>
 
-<h3 id="2-获取上拉刷新链接"><a href="#2-获取上拉刷新链接" class="headerlink" title="2. 获取上拉刷新链接"></a>2. 获取上拉刷新链接</h3><p>向上滚动历史列表，当到接近最底部时，会自动获取更多内容，此时可以通过抓包获取内容。<br><img src="https://diycode.b0.upaiyun.com/photo/2018/784da6b14584170d45393a0476105e63.png" alt></p>
-<p>如图所示，返回的是 json 格式内容，通过 can_msg_continue 确定是否有后续内容，general_msg_list 是解析的内容。通过分析多个加载历史可知，offset 控制加载数据的位置。<br><strong>–本例中使用 python 第三方库 requests 加载数据</strong></p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">getMore</span><span class="params">()</span>:</span></span><br><span class="line">   <span class="comment"># header</span></span><br><span class="line">	header = sj_utils.header2dict(base_header)</span><br><span class="line">	response = requests.get(getUrl(),headers = header, verify = <span class="literal">False</span>)</span><br><span class="line">	</span><br><span class="line">	js = json.loads(response.text)</span><br><span class="line">	<span class="keyword">if</span> js[<span class="string">"errmsg"</span>] == <span class="string">"ok"</span>:</span><br><span class="line">		alist = js[<span class="string">"general_msg_list"</span>] <span class="comment"># 内容是 json 字符串，需要先转为 json</span></span><br><span class="line">		alist = json.loads(alist)[<span class="string">"list"</span>]</span><br><span class="line">		<span class="keyword">for</span> item <span class="keyword">in</span> alist:</span><br><span class="line">		  <span class="comment"># 具体处理</span></span><br><span class="line">			print(item[<span class="string">"comm_msg_info"</span>][<span class="string">"content"</span>])</span><br><span class="line"></span><br><span class="line">	<span class="keyword">if</span> js[<span class="string">"can_msg_continue"</span>]:</span><br><span class="line">	   url_offset += <span class="number">10</span> <span class="comment"># 设置偏移量</span></span><br><span class="line">		getMore()</span><br></pre></td></tr></table></figure>
+<p>在didFinishLaunchingWithOptions配置xlog<br>在applicationWillTerminate中destory</p>
+<h3 id="2-4-引入protobuf"><a href="#2-4-引入protobuf" class="headerlink" title="2.4 引入protobuf"></a>2.4 引入protobuf</h3><h4 id="2-4-1-生成-pb-swift"><a href="#2-4-1-生成-pb-swift" class="headerlink" title="2.4.1 生成.pb.swift"></a>2.4.1 生成.pb.swift</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">// 安装protobuf</span><br><span class="line">brew install protobuf</span><br><span class="line">// 安装swift-protobuf-plugin</span><br><span class="line">	git clone https://github.com/apple/swift-protobuf.git</span><br><span class="line">	cd swift-protobuf</span><br><span class="line">	swift build -c release -Xswiftc -static-stdlib</span><br><span class="line"></span><br><span class="line">// 将.proto文件转换成.swift</span><br><span class="line">protoc --swift_out=. name.proto</span><br></pre></td></tr></table></figure>
 
-<h3 id="3-处理数据"><a href="#3-处理数据" class="headerlink" title="3.处理数据"></a>3.处理数据</h3><p>开头已经介绍了 scrapy 使用，通过管道文件可以轻松处理爬取内容。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 保存 json 文件</span></span><br><span class="line">self.f.write(json.dumps(dict(item)))</span><br></pre></td></tr></table></figure>
+<p>写了个shell,可以批量将当前文件夹下的所有.proto转换成对应的.pb.swift<br>地址为<a href="https://github.com/515783034/FileResource/blob/master/swift-join-mars/proto/install.sh" target="_blank" rel="noopener">install.sh</a>,可直接双击使用<br>内容如下:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">cd $(cd `dirname $0`; pwd)</span><br><span class="line"></span><br><span class="line">for i in find *.proto</span><br><span class="line">do</span><br><span class="line">    if [ $i == "find" ]; then</span><br><span class="line">        continue</span><br><span class="line">    fi</span><br><span class="line">    protoc --swift_out=. $i</span><br><span class="line">    echo "生成文件:$i.pb.swift"</span><br><span class="line">done</span><br></pre></td></tr></table></figure>
 
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
-<li><a href="https://juejin.im/book/5a157c155188254a701eb3c1" target="_blank" rel="noopener">基于 Python 实现微信公众号爬虫</a></li>
+<h4 id="2-4-2-引入-pb-swift"><a href="#2-4-2-引入-pb-swift" class="headerlink" title="2.4.2 引入.pb.swift"></a>2.4.2 引入.pb.swift</h4><p><a href="https://github.com/apple/swift-protobuf" target="_blank" rel="noopener">swift-protobuf</a>: Plugin and runtime library for using protobuf with Swift</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">// pod引用</span><br><span class="line">pod &apos;SwiftProtobuf&apos;</span><br><span class="line">// 将.pb.swift添加到工程中(不用添加.proto)</span><br><span class="line">// 使用</span><br><span class="line">var con = Conversation()</span><br><span class="line">con.name = &quot;ashen&quot;</span><br><span class="line">con.notice = &quot;for test&quot;</span><br><span class="line">// 传输时,直接传递data数据</span><br><span class="line">let data = try? con.serializedData()</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-5-添加桥接文件-可选"><a href="#2-5-添加桥接文件-可选" class="headerlink" title="2.5 添加桥接文件(可选)"></a>2.5 添加桥接文件(可选)</h3><p>由于该framework是C++写的,对于不会C++的人(比如我)来说, 调用是个很大的问题, 可以通过demo中的相关文件 + swift-oc桥接头文件直接转换成swift可以直接调用的类<br><img src="https://user-gold-cdn.xitu.io/2017/12/7/1602f5e5c21b74ee?w=614&h=325&f=png&s=295127" alt="相关文件"></p>
+<h2 id="3-xlog文件解析"><a href="#3-xlog文件解析" class="headerlink" title="3 xlog文件解析"></a>3 xlog文件解析</h2><h3 id="3-1-安装python依赖库"><a href="#3-1-安装python依赖库" class="headerlink" title="3.1 安装python依赖库."></a>3.1 安装python依赖库.</h3><p><strong>首先需要查看自己的python版本, decode_mars_crypt_log_file.py只在python2.+下支持,3.+不能正常运行</strong></p>
+<p>安装依赖库pyelliptic, 如果同时存在2.+ 和3.+ 版本,请使用pip2<br>pyelliptic的最新版本1.5.8,存在bug, 需要指定版本为1.5.7</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install pyelliptic==1.5.7</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-2-解密logger日志"><a href="#3-2-解密logger日志" class="headerlink" title="3.2 解密logger日志"></a>3.2 解密logger日志</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">// 切换到crypt文件夹</span><br><span class="line">cd mars/mars/log/crypt</span><br><span class="line">// 解密logger</span><br><span class="line">python2 decode_mars_crypt_log_file.py logger_20171205.xlog</span><br><span class="line">// logger_20171205.xlog.log 即为解密出的log日志</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="fix-bugs"><a href="#fix-bugs" class="headerlink" title="fix bugs:"></a>fix bugs:</h2><ul>
+<li><p>ImportError: No module named pyelliptic</p>
+<p>原因:没有正确安装pyelliptic的依赖库</p>
+<p>解决:  pip2 install pyelliptic==1.5.7</p>
+<p>如果安装后依然报错,可能是由于安装了多个版本的python,pyelliptic并没有安装在2.+的python下.<br>在MacOS上, 如果同时安装了2.+ 和3.+的python,  pip2 和pip3 分别代表安装到2.+ 和3.+的库中. 所以可以通过pip2 install pyelliptic==1.5.7 安装</p>
+</li>
 </ul>
+<ul>
+<li>AttributeError: dlsym(0x7fc443f02f50, EVP_CIPHER_CTX_reset): symbol not found<br>原因: pyelliptic的最新版本1.5.8的bug<br>解决: 使用1.5.7版本<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pip uninstall pyelliptic</span><br><span class="line">pip install pyelliptic==1.5.7</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="资源"><a href="#资源" class="headerlink" title="资源"></a>资源</h2><ul>
+<li><a href="https://github.com/515783034/FileResource/tree/master/swift-join-mars" target="_blank" rel="noopener">示例代码</a></li>
+<li><a href="https://github.com/515783034/FileResource/blob/master/swift-join-mars/proto/install.sh" target="_blank" rel="noopener">批量转proto</a></li>
+</ul>
+<p>参考: <a href="http://www.jianshu.com/p/fe8c5f3f6389" target="_blank" rel="noopener">Swift 接入微信 Mars_Xlogger 填坑指南——Jinkey 原创</a></p>
 
       
     </div>
@@ -634,8 +621,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/12/08/在swift中接入微信开源库Mars/" rel="next" title="在 swift 中接入微信开源库 Mars">
-                <i class="fa fa-chevron-left"></i> 在 swift 中接入微信开源库 Mars
+              <a href="/2017/11/09/macos-app-with-swift-and-python/" rel="next" title="我用Xcode +python写的第一个OS X app">
+                <i class="fa fa-chevron-left"></i> 我用Xcode +python写的第一个OS X app
               </a>
             
           </div>
@@ -644,8 +631,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/03/20/自建 iOS 静态库并用 pod 管理/" rel="prev" title="自建 iOS 静态库并用 pod 管理">
-                自建 iOS 静态库并用 pod 管理 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/02/06/wechat-official-with-scrapy/" rel="prev" title="用 scrapy 爬微信公众号的内容">
+                用 scrapy 爬微信公众号的内容 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -851,7 +838,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#抓包工具配置"><span class="nav-number">1.</span> <span class="nav-text">抓包工具配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Fiddler-windows"><span class="nav-number">1.1.</span> <span class="nav-text">1. Fiddler(windows)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Charles-MacOS"><span class="nav-number">1.2.</span> <span class="nav-text">2.Charles(MacOS)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#scrapy-python-package-使用"><span class="nav-number">2.</span> <span class="nav-text">scrapy(python package) 使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#公众号历史消息抓包"><span class="nav-number">3.</span> <span class="nav-text">公众号历史消息抓包</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-获取首页链接"><span class="nav-number">3.1.</span> <span class="nav-text">1.获取首页链接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-获取上拉刷新链接"><span class="nav-number">3.2.</span> <span class="nav-text">2. 获取上拉刷新链接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-处理数据"><span class="nav-number">3.3.</span> <span class="nav-text">3.处理数据</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考"><span class="nav-number">4.</span> <span class="nav-text">参考</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-介绍"><span class="nav-number">1.</span> <span class="nav-text">1 介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-mars"><span class="nav-number">1.1.</span> <span class="nav-text">1.1 mars</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-protobuf"><span class="nav-number">1.2.</span> <span class="nav-text">1.2 protobuf</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-创建framework"><span class="nav-number">2.</span> <span class="nav-text">2 创建framework</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-生成framework"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 生成framework</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-引入framework"><span class="nav-number">2.2.</span> <span class="nav-text">2.2 引入framework</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-xlog"><span class="nav-number">2.3.</span> <span class="nav-text">2.3 xlog</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-4-引入protobuf"><span class="nav-number">2.4.</span> <span class="nav-text">2.4 引入protobuf</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-4-1-生成-pb-swift"><span class="nav-number">2.4.1.</span> <span class="nav-text">2.4.1 生成.pb.swift</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-4-2-引入-pb-swift"><span class="nav-number">2.4.2.</span> <span class="nav-text">2.4.2 引入.pb.swift</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-5-添加桥接文件-可选"><span class="nav-number">2.5.</span> <span class="nav-text">2.5 添加桥接文件(可选)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-xlog文件解析"><span class="nav-number">3.</span> <span class="nav-text">3 xlog文件解析</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-安装python依赖库"><span class="nav-number">3.1.</span> <span class="nav-text">3.1 安装python依赖库.</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-解密logger日志"><span class="nav-number">3.2.</span> <span class="nav-text">3.2 解密logger日志</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#fix-bugs"><span class="nav-number">4.</span> <span class="nav-text">fix bugs:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#资源"><span class="nav-number">5.</span> <span class="nav-text">资源</span></a></li></ol></div>
             
 
           </div>
@@ -863,8 +850,6 @@
 
     </div>
   </aside>
-  
-    <div id="sidebar-dimmer"></div>
   
 
 
@@ -936,6 +921,8 @@
       <div class="back-to-top">
         <i class="fa fa-arrow-up"></i>
         
+          <span id="scrollpercent"><span>0</span>%</span>
+        
       </div>
     
 
@@ -965,6 +952,8 @@
 
 
 
+  
+
 
 
 
@@ -989,6 +978,9 @@
 
   
   <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/fancybox/source/jquery.fancybox.pack.js"></script>
 
   
   <script src="/lib/reading_progress/reading_progress.js"></script>
@@ -1037,19 +1029,17 @@
     <!-- LOCAL: You can save these files to your site and update links -->
 
   
-  <script src="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/gitmint.browser.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/gitment.browser.js"></script>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/default.css">
 <!-- END LOCAL -->
 
 <script>
   function renderGitment() {
-    var gitment = new Gitmint({
-      id: '1517883010000',
+    var gitment = new Gitment({
+      id: '1512699010000',
       owner: '515783034',
       repo: '515783034.github.io',
-      
-        lang: '' || navigator.language || navigator.systemLanguage || navigator.userLanguage,
       
       oauth: {
       
